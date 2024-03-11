@@ -1,0 +1,22 @@
+{
+  "name": "svglogomaker",
+  "version": "1.0.0",
+  "description": "this application takes in user input to generate a logo and save it as an svg file",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DTSmith17/SVG-Logo-Maker.git"
+  },
+  "author": "Donte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DTSmith17/SVG-Logo-Maker/issues"
+  },
+  "homepage": "https://github.com/DTSmith17/SVG-Logo-Maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}

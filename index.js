@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { Shape, Square, Circle, Triangle } = require("./lib/shapes")
+const { Shape, Square, Circle, Triangle } = require("./lib/shapes");
 
 const questions = [
   {
@@ -14,7 +14,7 @@ const questions = [
     name: "textColor",
   },
   {
-    type: "checkbox",
+    type: "list",
     message: "Choose a shape.",
     name: "logoShape",
     choices: ["Circle", "Triangle", "Square"],
@@ -25,6 +25,18 @@ const questions = [
     name: "shapeColor",
   },
 ];
+
+function generateSvg(data) {
+  let myshape;
+  if (data.logoShape === "Square") {
+    myshape = new Square(data.shapeColor, data.textColor, data.logoText);
+  } else if (data.logoShape === "Circle") {
+    myshape = new Circle(data.shapeColor, data.textColor, data.logoText);
+  } else if (data.logoShape === "Triangle") {
+    myshape = new Triangle(data.shapeColor, data.textColor, data.logoText);
+  }
+  return myshape.render();
+}
 
 function writeToFile(fileName, data) {
   // Generate markdown data based on user input and write data to a filename

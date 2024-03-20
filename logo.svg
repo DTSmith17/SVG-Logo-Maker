@@ -1,7 +1,7 @@
 
-        <svg  version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="50" fill="red"></circle>
+        <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="200,0 250,190 50,190" fill="blue"/>
         <text>
-        <tspan x="0" y="100" style="font-weight:bold; font-size: 4em; fill:grey;">ggg</tspan>
+        <tspan x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" style="font-weight:bold; font-size: 10em; fill:red;">ddd</tspan>
         </text>
         </svg>

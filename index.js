@@ -7,6 +7,7 @@ const questions = [
     type: "input",
     message: "Logo text",
     name: "logoText",
+    maxlength: 3,
   },
   {
     type: "input",
